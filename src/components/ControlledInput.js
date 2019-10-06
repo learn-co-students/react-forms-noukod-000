@@ -25,6 +25,7 @@ class ControlledInput extends React.Component {
               <form>
                 <input type="text" name="firstName" onChange={event => this.handleFirstNameChange(event)} value={this.state.firstName} />
                 <input type="text" name="lastName" onChange={event => this.handleLastNameChange(event)} value={this.state.lastName} />
+                <h2>Hello {this.state.firstName}</h2>
               </form>
             )
         }
